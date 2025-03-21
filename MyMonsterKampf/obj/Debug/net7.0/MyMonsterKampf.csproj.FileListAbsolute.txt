@@ -1,0 +1,14 @@
+C:\Users\Sammy\Desktop\MyMonsterKampf\MyMonsterKampf\bin\Debug\net7.0\MyMonsterKampf.exe
+C:\Users\Sammy\Desktop\MyMonsterKampf\MyMonsterKampf\bin\Debug\net7.0\MyMonsterKampf.deps.json
+C:\Users\Sammy\Desktop\MyMonsterKampf\MyMonsterKampf\bin\Debug\net7.0\MyMonsterKampf.runtimeconfig.json
+C:\Users\Sammy\Desktop\MyMonsterKampf\MyMonsterKampf\bin\Debug\net7.0\MyMonsterKampf.dll
+C:\Users\Sammy\Desktop\MyMonsterKampf\MyMonsterKampf\bin\Debug\net7.0\MyMonsterKampf.pdb
+C:\Users\Sammy\Desktop\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\MyMonsterKampf.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sammy\Desktop\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\MyMonsterKampf.AssemblyInfoInputs.cache
+C:\Users\Sammy\Desktop\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\MyMonsterKampf.AssemblyInfo.cs
+C:\Users\Sammy\Desktop\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\MyMonsterKampf.csproj.CoreCompileInputs.cache
+C:\Users\Sammy\Desktop\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\MyMonsterKampf.dll
+C:\Users\Sammy\Desktop\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\refint\MyMonsterKampf.dll
+C:\Users\Sammy\Desktop\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\MyMonsterKampf.pdb
+C:\Users\Sammy\Desktop\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\MyMonsterKampf.genruntimeconfig.cache
+C:\Users\Sammy\Desktop\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\ref\MyMonsterKampf.dll
