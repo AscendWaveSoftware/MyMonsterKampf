@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MyMonsterKampf
 {
@@ -10,33 +6,38 @@ namespace MyMonsterKampf
     {
        public override void SetStats()
        {
-            healthPoints = 200f;
-            attackPoints = 20f;
+            healthPoints = 35f;
+            attackPoints = 40f;
             defensePoints = 15f;
-            speed = 3f;
+            speed = 10f;
 
-            string currentRace = race[1];
        } 
 
         public override void Attack(MonsterBase _defendingMonster)
         {
-            Random rnd = new Random();
-            int critChance = rnd.Next(1, 200);
-            float critMultiplier = 2f;
 
             float finalDamage = attackPoints - _defendingMonster.defensePoints;
 
-            if (critChance >= 80)
+            if (_defendingMonster.healthPoints > 0)
             {
-                finalDamage = attackPoints * critMultiplier - _defendingMonster.defensePoints;
+                _defendingMonster.TakeDamage(finalDamage);
             }
-
-            _defendingMonster.TakeDamage(finalDamage);
+            else
+            {
+                _defendingMonster.healthPoints = 0;
+            }
         }
 
         public override void TakeDamage(float _damage)
         {
             healthPoints -= _damage;
+        }
+
+        public override string SetRace()
+        {
+
+            string currentRace = race[1];
+            return currentRace;
         }
     }
 }

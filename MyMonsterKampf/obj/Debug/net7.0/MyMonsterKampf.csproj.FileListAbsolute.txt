@@ -12,3 +12,18 @@ C:\Users\Sammy\Desktop\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\refint\MyM
 C:\Users\Sammy\Desktop\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\MyMonsterKampf.pdb
 C:\Users\Sammy\Desktop\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\MyMonsterKampf.genruntimeconfig.cache
 C:\Users\Sammy\Desktop\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\ref\MyMonsterKampf.dll
+D:\Programming Archive\CSharp Projekte\MyMonsterKampf\MyMonsterKampf\bin\Debug\net7.0\MyMonsterKampf.exe
+D:\Programming Archive\CSharp Projekte\MyMonsterKampf\MyMonsterKampf\bin\Debug\net7.0\MyMonsterKampf.deps.json
+D:\Programming Archive\CSharp Projekte\MyMonsterKampf\MyMonsterKampf\bin\Debug\net7.0\MyMonsterKampf.runtimeconfig.json
+D:\Programming Archive\CSharp Projekte\MyMonsterKampf\MyMonsterKampf\bin\Debug\net7.0\MyMonsterKampf.dll
+D:\Programming Archive\CSharp Projekte\MyMonsterKampf\MyMonsterKampf\bin\Debug\net7.0\MyMonsterKampf.pdb
+D:\Programming Archive\CSharp Projekte\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\MyMonsterKampf.csproj.AssemblyReference.cache
+D:\Programming Archive\CSharp Projekte\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\MyMonsterKampf.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming Archive\CSharp Projekte\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\MyMonsterKampf.AssemblyInfoInputs.cache
+D:\Programming Archive\CSharp Projekte\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\MyMonsterKampf.AssemblyInfo.cs
+D:\Programming Archive\CSharp Projekte\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\MyMonsterKampf.csproj.CoreCompileInputs.cache
+D:\Programming Archive\CSharp Projekte\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\MyMonsterKampf.dll
+D:\Programming Archive\CSharp Projekte\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\refint\MyMonsterKampf.dll
+D:\Programming Archive\CSharp Projekte\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\MyMonsterKampf.pdb
+D:\Programming Archive\CSharp Projekte\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\MyMonsterKampf.genruntimeconfig.cache
+D:\Programming Archive\CSharp Projekte\MyMonsterKampf\MyMonsterKampf\obj\Debug\net7.0\ref\MyMonsterKampf.dll
