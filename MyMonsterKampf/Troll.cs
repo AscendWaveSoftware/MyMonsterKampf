@@ -4,27 +4,32 @@ namespace MyMonsterKampf
 {
     internal class Troll : MonsterBase
     {
-       public override void SetStats()
-       {
-            healthPoints = 35f;
-            attackPoints = 40f;
-            defensePoints = 15f;
-            speed = 10f;
-
-       } 
-
         public override void Attack(MonsterBase _defendingMonster)
         {
-
-            float finalDamage = attackPoints - _defendingMonster.defensePoints;
-
-            if (_defendingMonster.healthPoints > 0)
+            if (healthPoints > 0)
             {
-                _defendingMonster.TakeDamage(finalDamage);
-            }
-            else
-            {
-                _defendingMonster.healthPoints = 0;
+                float finalDamage = MathF.Round(attackPoints - 0.2f * _defendingMonster.defensePoints);
+
+                if (healthPoints > _defendingMonster.healthPoints)
+                {
+                    float damageMultiplier = 1.2f;
+                    finalDamage = MathF.Round(finalDamage * damageMultiplier);
+                    Console.WriteLine($"{SetRace()} hat einen Schadensbonus, da die HP von {_defendingMonster.SetRace()} niedriger sind.");
+                }
+
+
+                if (_defendingMonster.healthPoints > 0)
+                {
+                    _defendingMonster.TakeDamage(finalDamage);
+                    if (_defendingMonster.healthPoints < 0)
+                    {
+                        _defendingMonster.healthPoints = 0;
+                    }
+                }
+                else
+                {
+                    _defendingMonster.healthPoints = 0;
+                }
             }
         }
 

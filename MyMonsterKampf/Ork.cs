@@ -2,28 +2,24 @@
 {
     internal class Ork : MonsterBase
     {
-        public override void SetStats()
-        {
-            // Ork ausgewogen
-            healthPoints = 30f;
-            attackPoints = 25f;
-            defensePoints = 25;
-            speed = 20f;
-
-        }
-
         public override void Attack(MonsterBase _defendingMonster)
         {
-
-            float finalDamage = attackPoints - _defendingMonster.defensePoints;
-
-            if (_defendingMonster.healthPoints > 0)
+            if (healthPoints > 0)
             {
-                _defendingMonster.TakeDamage(finalDamage);
-            }
-            else
-            {
-                _defendingMonster.healthPoints = 0;
+                float finalDamage = MathF.Round(attackPoints - 0.2f * _defendingMonster.defensePoints);
+
+                if (_defendingMonster.healthPoints > 0)
+                {
+                    _defendingMonster.TakeDamage(finalDamage);
+                    if (_defendingMonster.healthPoints < 0)
+                    {
+                        _defendingMonster.healthPoints = 0;
+                    }
+                }
+                else
+                {
+                    _defendingMonster.healthPoints = 0;
+                }
             }
         }
 
