@@ -16,7 +16,8 @@ namespace MyMonsterKampf
 
                 if (critChance >= 80)
                 {
-                    finalDamage = MathF.Round(attackPoints * critMultiplier - 0.2f * _defendingMonster.defensePoints);
+                    // Special Skill: Berechnung eines Crit-Werts
+                    finalDamage = MathF.Round(attackPoints * critMultiplier - 0.2f * _defendingMonster.defensePoints); // Kann aktuell minus Zahlen ausgeben was dazu führt, dass leben hinzugefügt wird statt abgezogen
                     Console.WriteLine($"{SetRace()} landet einen kritischen Treffer!");
                 }
 

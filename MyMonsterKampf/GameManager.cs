@@ -8,6 +8,7 @@
         private bool secondInput = false;
         private MonsterBase firstMonster = null!;
         private MonsterBase secondMonster = null!;
+        private MonsterBase monsterToAttack = null!;
 
 
 
@@ -22,22 +23,31 @@
             firstMonster.SetStats();
             secondMonster.SetStats();
 
+            if (firstMonster.speed > secondMonster.speed)
+            {
+                monsterToAttack = firstMonster;
+            }
+            else
+            {
+                monsterToAttack = secondMonster;
+            }
+
             while (!isGameOver)
             {
-                if (firstMonster.healthPoints > 0)
-                {
-                    Console.WriteLine($"{firstMonster.SetRace()} attackiert:");
-                    firstMonster.Attack(secondMonster);
-                    Console.WriteLine($"{secondMonster.SetRace()} hat noch {secondMonster.healthPoints} Lebenspunkte.");
-                    Console.ReadKey();
-                }
 
-                if (secondMonster.healthPoints > 0)
+                if (monsterToAttack == firstMonster)
                 {
-                    Console.WriteLine($"{secondMonster.SetRace()} attackiert:");
-                    secondMonster.Attack(firstMonster);
-                    Console.WriteLine($"{firstMonster.SetRace()} hat noch {firstMonster.healthPoints} Lebenspunkte.");
-                    Console.ReadKey();
+                    FirstMonsterAttackHandler();
+                    monsterToAttack = secondMonster;
+                }
+                else if (monsterToAttack == secondMonster)
+                {
+                    SecondMonsterAttackHandler();
+                    monsterToAttack = firstMonster;
+                }
+                else
+                {
+                    Console.WriteLine("monsterToAttack hat keinen Wert zugewiesen!"); ;
                 }
 
                 if (firstMonster.healthPoints == 0 || secondMonster.healthPoints == 0)
@@ -125,17 +135,41 @@
                             secondMonster = new Goblin();
                             firstInput = true;
                             break;
+                        default:
+                            break;
                     }
+                    Console.WriteLine($"{firstMonster.SetRace()} kämpft gegen {secondMonster.SetRace()}");
                 }
                 else
                 {
                     Console.WriteLine("Ungültige Eingabe! Bitte gebe eine Zahl von 1 bis 3 ein.");
                 }
             }
-
-            Console.WriteLine($"{firstMonster.SetRace()} kämpft gegen {secondMonster.SetRace()}");
             Console.Clear();
             return (firstMonster, secondMonster);
+        }
+
+
+        private void FirstMonsterAttackHandler()
+        {
+            if (firstMonster.healthPoints > 0)
+            {
+                Console.WriteLine($"{firstMonster.SetRace()} attackiert:");
+                firstMonster.Attack(secondMonster);
+                Console.WriteLine($"{secondMonster.SetRace()} hat noch {secondMonster.healthPoints} Lebenspunkte.");
+                Console.ReadKey();
+            }
+        }
+
+        private void SecondMonsterAttackHandler()
+        {
+            if (secondMonster.healthPoints > 0)
+            {
+                Console.WriteLine($"{secondMonster.SetRace()} attackiert:");
+                secondMonster.Attack(firstMonster);
+                Console.WriteLine($"{firstMonster.SetRace()} hat noch {firstMonster.healthPoints} Lebenspunkte.");
+                Console.ReadKey();
+            }
         }
     }
 }
